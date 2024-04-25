@@ -1,0 +1,2 @@
+export const omsContract = "0x6577E97A144B19092b239710bD80652D81775Cf0"
+export const listContract = "0x95319A95c69c353f0d122e8D95CA77533abC0653"

@@ -1,0 +1,112 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_question",
+				"type": "string"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_options",
+				"type": "string[]"
+			}
+		],
+		"name": "createPoll",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getPolls",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "question",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "votes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct PollContract.Option[]",
+						"name": "options",
+						"type": "tuple[]"
+					}
+				],
+				"internalType": "struct PollContract.Poll[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "polls",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "question",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "pollIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "optionIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "vote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "pollIndex",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "optionIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "voteForOption",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
